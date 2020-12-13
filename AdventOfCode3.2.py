@@ -4,6 +4,7 @@ with open('./slopeMapInput.txt') as file:
     data=file.readlines()
     file.close()    
 data = [x.replace('\n',"") for x in data]
+data = [x.replace('\r', "") for x in data]
 
 ##Code Challenge ##
 slopes = [tuple([1,1]),tuple([3,1]),tuple([5,1]),tuple([7,1]),tuple([1,2])]
